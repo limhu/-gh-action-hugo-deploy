@@ -25,3 +25,4 @@ git add --all
 git commit -m "Automated deployment: $(date -R) ${GITHUB_SHA}" || \
   echo 'No changes, skipping publish' && exit 0
 git push && echo "push success"
+git remove -v
